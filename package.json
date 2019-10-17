@@ -1,0 +1,22 @@
+{
+  "name": "repair-design",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radvilovich/repair-design-project.git"
+  },
+  "author": "Anastasiya Radvilovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radvilovich/repair-design-project/issues"
+  },
+  "homepage": "https://github.com/radvilovich/repair-design-project#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

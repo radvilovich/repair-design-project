@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header-section">
         <h1>IC "REPAIR DESIGN PROJECT"</h1>
         <nav>
             <ul>
-                <li>Home</li>
+                <li class="header-section_item__active">Home</li>
                 <li>Projects</li>
                 <li>Measurement</li>
                 <li>Team</li>
@@ -19,27 +21,29 @@
                 <li>Contacts</li>
             </ul>
         </nav>
-        <a href="">+7(928)768-32-39</a>
-        <div><input type="button" value="Request a call"></div>
+        <div class="header-section_phone">
+            <a href="">+7(928)768-32-39</a>
+        </div>
+        <div class="header-section_request"><button>Request a call</button></div>
     </header>
     <main>
-        <section-repair>
+        <section class="repair-section">
             <div>
-                <div><a href="">Instagram<div></div></a></div>
+                <div class="repair-section_side"><a href="">Instagram<div class="line"></div></a></div>
             </div>
-            <div>
-                <div>
-                    <span>Turkney repair in the<span><br><span>city of</span><span>Rostov-on-Don</span>
+            <div class="repair-section_main">
+                <div class="repair-section_title">
+                    <span>Turkney repair in the<span><br><span>city of</span><span id=Rostov>Rostov-on-Don</span>
                 </div>
                 <div>
-                    <p>Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from<br>cost of materials due to the organization of work</p>
+                    <p class="repair-section_info">Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from<br>cost of materials due to the organization of work</p>
                 </div>
-                <div>
-                    <input type="button" value="Calculate the cost">
-                    <input type="button" value="Submit your application">
-                </div>                
+                <div class="repair-section_buttons">
+                    <input class="repair-section_buttons__active" type="button" value="Calculate the cost">
+                    <input type="button" value="Submit your application"> 
+                </div>           
             </div>
-        </section-repair>
+        </section>
         <section-projects>
             <div>
                 <tabs>
@@ -469,11 +473,11 @@
         <section-map>
             Image of map
         </section-map>
-        <footer>
-            <div>IC "REPAIR DESIGN PROJECT"</div>
+        <footer class="footer-section">
+            <div class="footer-section_title">IC "REPAIR DESIGN PROJECT"</div>
             <nav>
                 <ul>
-                    <li>Home</li>
+                    <li class="active">Home</li>
                     <li>Projects</li>
                     <li>Measurement</li>
                     <li>Team</li>
@@ -481,8 +485,10 @@
                     <li>Contacts</li>
                 </ul>
             </nav>
-            <a href="">+7(928)768-32-39</a>
-            <div><input type="button" value="Request a call"></div>
+            <div class="footer-section_phone">
+                <a href="">+7(928)768-32-39</a>
+            </div>
+            <div class="footer-section_request"><button>Request a call</button></div>
         </footer>
     </main>
 </body>

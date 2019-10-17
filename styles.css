@@ -1,5 +1,177 @@
-body {
-  background: blue;
+.header-section {
+  background-color: #131313;
+  height: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.header-section h1 {
+  color: #E3B873;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 82px;
+  cursor: pointer;
+}
+
+.header-section nav {
+  color: #FFFFFF;
+  margin-left: 95px;
+}
+
+.header-section nav ul {
+  list-style-type: none;
+}
+
+.header-section nav ul li {
+  font-family: FuturaBookC;
+  float: left;
+  margin-right: 47px;
+  cursor: pointer;
+}
+
+.header-section nav ul li:hover, .header-section nav ul li.header-section_item__active {
+  color: #E3B873;
+}
+
+.header-section .header-section_phone {
+  margin-right: 45px;
+}
+
+.header-section .header-section_phone a:visited, .header-section .header-section_phone a:default {
+  color: #E3B873;
+}
+
+.header-section h1, .header-section .header-section_phone, .header-section .header-section_request {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.header-section nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header-section .header-section_request {
+  margin-right: 100px;
+}
+
+.header-section .header-section_request button {
+  color: #FFFFFF;
+  width: 161px;
+  height: 37px;
+  font-size: 13px;
+  line-height: 15px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.repair-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #131313;
+  height: 755px;
+}
+
+.repair-section .repair-section_main, .repair-section .repair-section_side {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.repair-section .repair-section_main {
+  background-image: url(/assets/images/Repair.jpg);
+  height: 707px;
+  font-weight: 1358px;
+}
+
+.repair-section .repair-section_side {
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.repair-section .repair-section_side a:visited, .repair-section .repair-section_side a:default {
+  color: #E3B873;
+}
+
+.repair-section .repair-section_side .line {
+  border: 1.5px solid #E3B873;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.repair-section .repair-section_block {
+  margin-left: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.repair-section .repair-section_title {
+  margin-top: 194px;
+  font-family: Yeseva One;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.repair-section .repair-section_title #Rostov {
+  color: #E3B873;
+}
+
+.repair-section .repair-section_info {
+  margin-top: 19px;
+  font-family: FuturaBookC;
+  font-size: 22px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.repair-section .repair-section_buttons button {
+  margin-top: 41px;
+  width: 207px;
+  height: 51px;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.repair-section .repair-section_buttons button:hover, .repair-section .repair-section_buttons button.repair-section_buttons__active {
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
 /*# sourceMappingURL=styles.css.map */
