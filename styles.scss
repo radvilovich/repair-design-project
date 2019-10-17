@@ -70,81 +70,108 @@
 .repair-section {
     display: flex;
     flex-direction: row;
+    align-content: stretch;
     background-color: #131313;
-    height: 755px;
+    height: 700px;
+    
+    .repair-section_main  {
+        flex: 1 1 auto;
+    }
 
-    .repair-section_main, .repair-section_side {
-        flex: 0 0 auto;
+    .repair-section_side {
+        flex: 0 0 60px;
+        overflow: hidden;
+    }
+  
+    .repair-section_side {
+        display: flex;
+        align-items: center;
+
+        .link {
+            display: flex;
+            align-items: center;
+            transform: rotate(90deg);
+            margin-left: -40px;
+
+            a {
+                display: inline-block;
+                flex: 0 0 auto;
+                font-family: FuturaDemiC;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                text-decoration-line: none;
+                &:visited, &:default {
+                    color: #E3B873;
+                }
+            }
+
+            .line {
+                flex: 0 0 auto;
+                height: 1px;
+                width: 51px;
+                background-color: #E3B873;
+                margin-left: 8px;
+            }
+        }
     }
 
     .repair-section_main {
-        background-image: url(/assets/images/Repair.jpg);
-        height: 707px;
-        font-weight: 1358px;
-    }
-    
-    .repair-section_side {
-        //align-items: center;
-        font-family: FuturaDemiC;
-        font-size: 14px;
-        line-height: 16px;
-        text-decoration-line: none;
-        transform: rotate(90deg);
-        a {
-            &:visited, &:default {
-                color: #E3B873;
-            }
-        }
-        .line {
-            border: 1.5px solid #E3B873;
-            transform: rotate(-180deg);
-        }
-    }
-
-    .repair-section_block {
-        margin-left: 60px;
+        background: rgba(0, 0, 0, .65) url(/assets/images/Repair.jpg);
+        background-blend-mode: darken;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-    }
 
-    .repair-section_title {
-        margin-top: 194px;
-        font-family: Yeseva One;
-        font-size: 40px;
-        line-height: 53px;
-        text-transform: uppercase;
-        color: #FFFFFF;
+        .information {
+            flex: 0 0 600px;
+            margin-left: 60px;
 
-        #Rostov {
-            color: #E3B873;
-        }
-    }
+            .information_title {
+                font-family: Yeseva One;
+                font-size: 40px;
+                line-height: 53px;
+                text-transform: uppercase;
+                color: #FFFFFF;
 
-    .repair-section_info {
-        margin-top: 19px;
-        font-family: FuturaBookC;
-        font-size: 22px;
-        line-height: 30px;
-        color: #FFFFFF;
-    }
+                .color-orange {
+                    color: #E3B873;
+                }
+            }
 
-    .repair-section_buttons {
-        button {
-            margin-top: 41px;
-            width: 207px;
-            height: 51px;
-            font-family: FuturaDemiC;
-            font-size: 13px;
-            line-height: 15px;
-            color: #FFFFFF;
-            background: none;
-            border: 1px solid #FFFFFF;
-            border-radius: 2px;
-            cursor: pointer;
-            &:hover, &.repair-section_buttons__active {
-                background: #E3B873;
-                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+            .information_body {
+                font-family: FuturaBookC;
+                font-size: 22px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+
+            .information_buttons {
+                button {
+                    float: left;
+                    width: 207px;
+                    height: 51px;
+                    margin-right: 20px;
+                    font-family: FuturaDemiC;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    background: none;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    &:hover, &.active {
+                        background: #E3B873;
+                        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+                        border: 1px solid #E3B873;
+                    }
+                } 
             }
         }
-      
     }
+
+    
+
+    
 }
